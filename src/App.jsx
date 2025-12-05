@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import WelcomePage from './pages/WelcomePage';
+import GameDetailPage from './pages/GameDetailPage';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Navbar />
                 <Routes>
           <Route path="/" element={<WelcomePage />} />
+          <Route path="/game/:gameId" element={<GameDetailPage />} />
         </Routes>
       
       </div>
